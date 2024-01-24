@@ -1,0 +1,14 @@
+mov ax,1000h
+mov ds,ax
+mov cl,05h
+mov si,500h
+again:mov ax,[si]
+ror ax, 01
+jc odd
+inc bx
+jmp next
+odd:inc dx
+next: add si,02
+dec cl
+jnz again
+hlt
