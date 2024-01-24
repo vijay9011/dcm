@@ -1,0 +1,8 @@
+mov ax, 1050h
+mov ds,ax
+mov bl,92h
+mov al, 23h
+add al,bl
+daa
+mov dl, al
+hlt
