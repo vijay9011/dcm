@@ -1,0 +1,14 @@
+mov ds,ax
+mov si,500h
+mov di,600h
+mov cl,04h
+dec cl
+mov al,[si]
+loop: inc si
+cmp al,[si]
+jnc co
+mov al,[si]
+co: dec cl
+jnz loop
+mov [di],ax
+hlt
