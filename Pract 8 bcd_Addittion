@@ -1,6 +1,7 @@
 mov ax, 1050h
 mov ds,ax
 mov bl,92h
+//xor al,al
 mov al, 23h
 add al,bl
 daa
