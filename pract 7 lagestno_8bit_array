@@ -1,3 +1,4 @@
+mov ax, 1000h
 mov ds,ax
 mov si,500h
 mov di,600h
