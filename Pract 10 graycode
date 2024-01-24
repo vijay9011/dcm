@@ -1,0 +1,6 @@
+mov al,34h
+mov bl,al
+shr al,01
+xor bl,al
+mov dl,bl
+hlt
